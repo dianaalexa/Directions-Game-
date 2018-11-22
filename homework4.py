@@ -27,13 +27,13 @@ def startgame():
     newloc = input("You can move here: " + str(directions[name]) + " .Please select your choice ")
     if newloc == "Q":
         print("Game is over.")
-    elif newloc == "E" and name == "Road":
+    elif newloc == "W" and name == "Road":
         loc = "2";
         startgame();
-    elif newloc == "E" and name == "Building":
+    elif newloc == "W" and name == "Building":
         loc = "1";
         startgame();
-    elif newloc == "E" and name == "Valley":
+    elif newloc == "W" and name == "Valley":
         loc = "2";
         startgame();
     elif newloc == "S" and name == "Road":
@@ -42,7 +42,7 @@ def startgame():
     elif newloc=="S" and name =="Forest":
         loc = "1";
         startgame();
-    elif newloc == "W" and name == "Road":
+    elif newloc == "E" and name == "Road":
         loc = "3";
         startgame();
     elif newloc == "N" and name == "Road":
@@ -57,5 +57,6 @@ def startgame():
     else:
         print("This is not a valid direction. Please choose again")
         startgame();
-        
+ 
+startgame();
 # Instructions: First choose your location by using an assigned number: 1,2,3,4,5. The game will then show you alternative directions that you can take 
