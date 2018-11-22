@@ -17,7 +17,7 @@
 
 
 locations = {"1":"Road","5":"Forest","3":"Building","2":"Hill","4":"Valley"}
-directions = {"Road": ["N", "S", "E", "W", "Q"],"Forest":["S","Q"],"Building":["E","Q"],"Valley":["N","E","Q"],"Hill":["N","Q"]}
+directions = {"Road": ["N", "S", "E", "W", "Q"],"Forest":["S","Q"],"Building":["W","Q"],"Valley":["N","W","Q"],"Hill":["N","Q"]}
 start = input("Please insert your location(1 for Road,2 for Hill,3 for Building,4 for Valley,5 for Forest): ")
 loc = start
 def startgame(): 
